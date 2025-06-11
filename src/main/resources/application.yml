@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: mongo
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/testMongo
+
+  jackson:
+    time-zone: Asia/Seoul
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.mongodb.driver: INFO
+    org.mongodb.driver.cluster: INFO
+    org.mongodb.driver.connection: INFO
+    org.mongodb.driver.protocol.command: DEBUG
+
