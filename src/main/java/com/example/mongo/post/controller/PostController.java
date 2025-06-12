@@ -50,7 +50,6 @@ public class PostController {
         return postService.findMostCommentPost();
     }
 
-
     @PostMapping("/dummy")
     @ResponseStatus(HttpStatus.OK)
     public void savePostDummy(@RequestBody PostDummyCreateRequest request) {

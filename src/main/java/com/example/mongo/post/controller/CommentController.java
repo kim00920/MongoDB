@@ -18,4 +18,10 @@ public class CommentController {
     public void addComment(@RequestBody CommentCreateRequest request) {
         commentService.addComment(request);
     }
+
+    @PostMapping("/dummy")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void addCommentDummy(@RequestBody CommentDummyCreateRequest request) {
+        commentService.addCommentDummy(request);
+    }
 }
